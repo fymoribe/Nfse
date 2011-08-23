@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/style.css" media="screen" /> 
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/print.css" media="print" /> 
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/login.css" />
+	<title> NFS-e </title>
+</head>
+<body>
+	<div id="top">
+		<img src="<?php echo $this->baseUrl(); ?>/imagens/Logotipo.png" alt="" style="float: left; width: 100px; height: 100px" />
+		<p class="titulo"> Nota Fiscal de Serviços Eletrônica </p> 
+	</div>
+	
+	<div id="loginn">
+	<?php echo $this->form; ?>
+		
+		<div id="erro">
+		<?php echo $this->messageError;?>
+		</div>
+	
+	</div>	
+	
+	<div id="footer">
+		Copyright © 2011 <a href="http://www.k13.com.br" style="color: blue">K13 Soluções Online</a>
+	</div>	
+</body>
+</html>	

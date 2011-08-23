@@ -1,0 +1,55 @@
+<div style="padding:20px;">
+    <fieldset style="margin: 40px 100px 20px 100px;">
+	<legend style="font-size:24px;margin:20px;">Clientes</legend>
+	<center>
+		<table id="myTable" class="tablesorter">  
+			<thead> 
+				<tr>
+	   				<th width="20%">CPF/CNPJ</th> 
+					<th width="40%">Raz#o Social</th>
+	   	 			<th colspan="2"></th>
+	   			</tr>  
+   			</thead>
+   			<tbody>
+				<?php foreach($this->cnte as $product): ?>
+					<tr> 
+		   				<td> <?php echo $product->cpfCnpjTomador; ?></td> 
+						<td><p><?php echo $product->razaoSocialTomador; ?></td>
+		   	 			<td>
+		   	 				<input id="confirm_button" type="button" value="Apagar" /> 
+		   	 				<a href="<?php echo $this->url(array(
+		                                       'controller' => 'clientes',
+		                                       'action'     => 'editar',
+		                                       'id'         => $product->id)); ?>" title="Editar"  >Editar</a> 
+		                
+							<a href="<?php echo $this->url(array(
+		                                       'controller' => 'clientes',
+		                                       'action'     => 'remove',
+		                                       'razaoSocialTomador'         => $product->razaoSocialTomador)); ?>" title="Apagar" id="confirm_button">Apagar</a>
+		                                       
+						</td>
+		   			</tr>  
+	    		<?php endforeach; ?>
+    		</tbody>    		
+    	</table>	
+    	<div id="pager" class="pager">
+    		<form>
+    				<img src="../imagens/first.png" class="first"/>
+    				<img src="../imagens/prev.png" class="prev"/>
+    				<img src="../imagens/next.png" class="next"/>
+    				<img src="../imagens/last.png" class="last"/>
+
+				<select class="pagesize">
+					<option selected="selected"  value="10">10</option>
+					<option value="20">20</option>
+					<option value="30">30</option>
+					<option  value="40">40</option>
+				</select>
+			</form>
+		</div>
+    			   	
+   	</center>
+   	
+
+</fieldset>
+</div>

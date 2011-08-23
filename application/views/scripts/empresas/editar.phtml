@@ -1,0 +1,41 @@
+<script type="text/javascript">
+
+function carregarCidadesByEstado(estado){
+	 $.ajax({
+	        url:'<?php echo $this->url(array('controller'=>'ajax','action'=>'cidades'),null,true); ?>',
+	        dataType:'html',
+	        data:{uf: estado},
+	        type:'GET',
+	        success: function(data){
+	                $('select[name = cidadePrestador]').html(data);
+	        }
+	    });
+	
+}
+</script>
+
+<script type="text/javascript">
+
+function carregarCidadesByEstado(estado, cidade){
+	 $.ajax({
+	        url:'<?php echo $this->url(array('controller'=>'ajax','action'=>'cidades'),null,true); ?>',
+	        dataType:'html',
+	        data:{
+		        uf: estado,
+		        cid: cidade
+		    },
+	        type:'GET',
+	        success: function(data){
+	                $('select[name = cidadePrestador]').html(data);
+	        }
+	    });
+	
+}
+</script>
+
+<div style="padding:20px;">
+    <fieldset style="margin: 40px 100px 20px 100px;">
+	<legend style="font-size:24px;margin:20px;">Dados da Empresa</legend>
+	<?php echo $this->form; ?>
+    </fieldset>
+</div>

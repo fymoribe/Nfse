@@ -1,0 +1,22 @@
+@CHARSET "ISO-8859-1";
+
+#loginn
+{
+	margin-left: 37%;
+	margin-right: 37%;
+	margin-top:10%;
+	border: solid;
+	border-width:1px;
+	background-color: #E8E8E8;
+	padding: 10px;
+	font-size: 20px;
+	color: #1C1C1C;
+	
+}
+
+.errors
+{
+	color:#FF0000;
+	font-size:15px;
+	margin-left:10px;
+}

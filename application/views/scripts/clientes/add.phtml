@@ -1,0 +1,25 @@
+<script type="text/javascript">
+
+function carregarCidadesByEstado(estado){
+	 $.ajax({
+	        url:'<?php echo $this->url(array('controller'=>'ajax','action'=>'cidades'),null,true); ?>',
+	        dataType:'html',
+	        data:{uf: estado},
+	        type:'GET',
+	        success: function(data){
+	                $('select[name = cidadeTomador]').html(data);
+	        }
+	    });
+	
+}
+</script>
+
+
+
+
+<div style="padding:20px;">
+    <fieldset style="margin: 40px 100px 20px 100px;">
+	<legend style="font-size:24px;margin:20px;">Adicionar Empresa</legend>
+	<?php echo $this->form; ?>
+    </fieldset>
+</div>

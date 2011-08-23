@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/style.css" media="screen" /> 
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/print.css" media="print" /> 
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl(); ?>/css/login.css" />
+	<script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery-1.6.2.js"></script>
+	<script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery.maskedinput-1.3.js"></script>
+	<script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery.validate.js"></script>		
+	<script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery.seekAttention.js"></script>
+	<script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery.tablesorter.js"></script>
+	<script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery.tablesorter.pager.js"></script>
+	<script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery.ui.draggable"></script>
+	<script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/jquery.alerts.js"></script>
+	<script type="text/javascript" src="<?php echo $this->baseUrl(); ?>/js/javascript.js"></script>
+	<title> NFS-e </title>
+</head>
+<body>
+	<div id="top">
+		<img src="<?php echo $this->baseUrl(); ?>/imagens/Logotipo.png" alt="" style="float: left; width: 100px; height: 100px" />
+		<p class="titulo"> Nota Fiscal de Serviços Eletrônica </p> 
+	</div>
+	
+	<div id="wrapper">
+		<div id="menu">
+			<?php echo $this->navigation()->menu();?>
+		</div>
+		<section id="main">
+			<?php echo $this->layout()->content; ?>
+		</section>			
+	</div>
+	
+	<div id="footer">
+		Copyright © 2011 <a href="http://www.k13.com.br" style="color: blue">K13 Soluções Online</a>
+	</div>	
+</body>
+</html>	

@@ -1,0 +1,62 @@
+<div style="padding:20px;">
+    <fieldset style="margin: 40px 100px 20px 100px;">
+	<legend style="font-size:24px;margin:20px;">Dados da Empresa</legend>
+	
+<!--	<table id="myTable" class="tablesorter"> -->
+ 	<center><table class="info" border="0">
+		<tr> 
+				<td id="titulo">Razão Social:</td> 
+				<td colspan="7"><?php echo $this->empresa['razaoSocialPrestador']; ?></td>
+				    	
+		</tr>   
+		<tr> 
+				<td id="titulo">Nome Fantasia:</td> 
+				<td colspan="7"><?php echo $this->empresa['nomeFantasiaPrestador']; ?></td>
+							    	
+		</tr>   
+		<tr> 
+				<td id="titulo" style="padding: 4px 5px 4px 15px;">CPF/CNPJ:</td> 
+				<td style="padding: 4px 5px 4px 15px;"><?php echo $this->empresa['cpfCnpjPrestador']; ?></td>
+				<td colspan="3" id="titulo" style="padding: 4px 5px 4px 15px;">Inscrição <br /> Municipal:</td>
+				<td colspan="3" style="padding: 4px 5px 4px 15px;"><?php echo $this->empresa['inscricaoPrestador']; ?></td>		    	
+		</tr>	
+		<tr> 
+				<td id="titulo">Logradouro:</td> 
+				<td colspan="7"><?php echo $this->empresa['enderecoPrestador']; ?></td>
+						    	
+		</tr>	
+		<tr> 
+				<td id="titulo">Complemento:</td> 
+				<td><?php echo $this->empresa['complementoEnderecoPrestador']; ?></td>
+				<td id="titulo">Número:</td>
+				<td colspan="5"><?php echo $this->empresa['numeroEnderecoPrestador']; ?></td>		    	
+		</tr>   	
+		<tr> 
+				<td id="titulo">Bairro:</td> 
+				<td><?php echo $this->empresa['bairroPrestador']; ?></td>
+				<td id="titulo">CEP:</td>
+				<td colspan="5"><?php echo $this->empresa['cepPrestador']; ?></td>		    	
+		</tr>
+		<tr> 
+				<td id="titulo">Telefone:</td> 
+				<td><?php echo $this->empresa['telefonePrestador']; ?></td>	
+				<td id="titulo">País:</td>
+				<td colspan="5"><?php echo $this->empresa['paisPrestador']; ?></td>				
+		</tr>	
+		<tr> 
+				<td id="titulo">Cidade:</td> 
+				<td><?php echo $this->cidade; ?></td>
+				<td id="titulo">UF:</td>
+				<td colspan="5"><?php echo $this->empresa['ufPrestador']; ?></td>	    	
+		</tr>		
+		<tr> 
+				<td id="titulo">Email:</td> 
+				<td colspan="7"><?php echo $this->empresa['emailPrestador']; ?></td>
+						    	
+		</tr>
+		
+    </table></center>
+    <?php echo $this->btn_editar;?>
+	<?php //echo $this->empresa['razaoSocialPrestador']; ?>
+    </fieldset>
+</div>

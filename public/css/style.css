@@ -1,0 +1,724 @@
+li.elements{
+	list-style-type: none;
+}
+table.info{
+	text-align: left;
+	
+}
+table.info td{
+	padding: 8px 5px 8px 15px;
+}
+
+table.info td#titulo{
+	font-weight: bold;
+}
+
+#btn_editar{
+	font-weight: bolder; 
+	width: 70px;
+    background-image:  url("../imagens/i_editar.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: left;    
+    text-align: right;
+    padding: 2px;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* render html5 elements as block */
+header,footer,section,aside,nav,article {
+	display: block;
+}
+
+#top .titulo {
+	vertical-align: middle;
+	padding: 30px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 40px;
+	text-shadow: 0.1em 0.1em 0.05em white;
+}
+
+body {
+	line-height: 1;
+	background-color: #9AFF9A;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+/* layout */
+#wrapper {
+	width: 940px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: #FFF;
+}
+
+nav {
+	width: 940px;
+	height: 50px;
+	margin: 0 auto;
+	background: #C8DFCB;
+}
+
+#main {
+	width: 940px;
+	margin: 0 auto;
+	background: #FFF;
+}
+
+#footer {
+	text-align: center; width : 940px;
+	margin: 0 auto;
+	clear: both;
+	width: 940px;
+}
+
+#top {
+	width: 940px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* basics */
+h1,h2,h3,h4,h5,h6 {
+	display: block;
+	font-variant: small-caps;
+	line-height: 1.5em;
+	padding: 10px 0;
+	font-weight: bold;
+	color: #000;
+}
+
+a:link,a:visited {
+	color: #1D6C28;
+	text-decoration: none;
+}
+
+a:hover,a:active {
+	text-decoration: underline;
+}
+
+p {
+	margin-bottom: 18px;
+}
+
+li {
+	padding-left: 5px;
+}
+
+/* nav */
+nav .menu {
+	font-weight: bold;
+}
+
+nav .menu ul {
+	margin: 0;
+	padding: 14px 0 0 20px;
+	list-style: none;
+	line-height: normal;
+}
+
+nav .menu li {
+	display: block;
+	float: left;
+}
+
+nav .menu a {
+	display: block;
+	float: left;
+	margin-right: 5px;
+	padding: 0px 15px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #000;
+}
+
+nav .menu a:hover {
+	text-decoration: underline;
+}
+
+#footer aside h3 {
+	
+}
+
+#footer p {
+	margin-top: -15px;
+}
+
+.navigation li a {
+	background: none;
+}
+
+.submenu li a {
+	background: none;
+	display: none;
+}
+
+.navigation {
+	float: left;
+	background-color: #43CD80;
+	height: 40px;
+	width: 910px;
+	padding: 0 0 0 30px;
+	margin: 0 0 0 0;
+	list-style: none;
+}
+
+.navigation li {
+	float: left;
+	font-size: 30px;
+	margin-right: 10px;
+	border: red;
+	/* If you change this, be sure to adjust the initial value of navWidth in coda-slider.1.1.1.js */
+}
+
+.navigation a { /* The nav links */
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 36px;
+	background: #c6e3ff;
+	text-decoration: none;
+	display: block;
+	height: 38px;
+	width: 128px;
+	outline: none;
+}
+
+.navigation li a:hover {
+	background-color: #548B54;
+}
+
+.navigation li a.current {
+	color: #CCC;
+}
+
+.navigation li ul {
+	display: none;
+	
+}
+
+.navigation li:hover ul {
+	display: block;
+	padding: 0 0 0 10px;
+	padding-left: 10px;
+	position: absolute;
+}
+
+.navigation li:hover ul li {
+	list-style: none;
+	display: block;
+	float: none;
+}
+
+
+/* FORM EMPRESAS */ 
+
+#empresaInfo {
+	margin: 20px 10px 10px 10px;
+}
+
+label.labels{
+	font-weight: bold;
+	clear: both;
+	display: inline-table;
+	width: 200px;
+	margin-bottom: 15px;
+	margin-left: 30px;
+}
+
+
+.btnSalvar{	
+	float: right;
+	font-weight: bold; 
+	width: 75px;
+	height: 25px;
+    background-image:  url("../imagens/i_salvar.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: left;    
+    text-align: right;
+    padding-right: 2px;
+    margin: 10px 32px 15px 0px;
+}
+
+#empresaInfo input {
+	height: 25px;
+	background-color: #d7d7d7;
+	width: 400px;
+}
+
+#empresaInfo select {
+	background-color: #d7d7d7;
+	width: 404px;
+	height: 25px;
+}
+
+ul.errors{
+	margin-right:32px;
+	text-align:right;
+	margin-bottom: 10px;
+}
+/*
+#razaoSocialPrestador {
+	width: 480px;
+}
+
+#nomeFantasiaPrestador-label label{
+	margin-right: 14px;
+}
+#nomeFantasiaPrestador{
+	width: 480px;
+}
+
+#cpfCnpjPrestador-label label{
+	margin-right: 103px;
+}
+#cpfCnpjPrestador{
+	width: 123px;;
+}
+
+#inscricaoPrestador-label label{
+	margin-right: 15px;
+	margin-left: 20px;
+}
+#inscricaoPrestador{
+	width: 115px;;
+}
+
+#enderecoPrestador-label label{
+	margin-right: 45px;
+}
+#enderecoPrestador{
+	width: 480px;;
+}
+
+#complementoEnderecoPrestador-label label{
+	margin-right: 21px;
+}
+#complementoEnderecoPrestador{
+	width: 250px;;
+}
+
+#numeroEnderecoPrestador-label label{
+	margin-right: 16px;
+}
+#numeroEnderecoPrestador{
+	width: 95px;;
+}
+
+#bairroPrestador-label label{
+	margin-right: 93px;
+}
+#bairroPrestador{
+	width: 250px;;
+}
+
+#cepPrestador-label label{
+	margin-right: 53px;
+}
+#cepPrestador{
+	width:95px;;
+}
+
+#cidadePrestador-label label{
+	margin-right: 86px;
+}
+#cidadePrestador{
+	width:140px;;
+}
+
+#ufPrestador-label label{
+	margin-right: 15px;
+}
+#ufPrestador{
+	width:25px;;
+}
+
+#paisPrestador-label label{
+	margin-right: 52px;
+}
+#paisPrestador{
+	width:95px;;
+}
+
+#telefonePrestador-label label{
+	margin-right: 71px;
+}
+#telefonePrestador{
+	width:115px;;
+}
+
+#emailPrestador-label label{
+	margin-right: 13px;
+}
+#emailPrestador{
+	width:255px;;
+}
+
+#botaoEditar-element{
+	float: right;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#botaoEditar{
+	font-weight: bolder; 
+	width: 70px;
+    background-image:  url("../imagens/i_editar.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: left;    
+    text-align: right;
+    padding-right: 2px;
+}
+
+#botaoSalvar-element{
+	float: right;
+	margin-right: 7px;
+	margin-top: 10px;
+}
+
+#botaoSalvar{
+	font-weight: bolder; 
+	width: 70px;
+    background-image:  url("../imagens/i_salvar.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: left;    
+    text-align: right;
+    padding-right: 2px;
+}
+*/
+
+/* FORM CLIENTES*/
+
+#clientesAdd {
+	margin: 10px;
+}
+
+#clientesAdd dt{
+    display: block;
+    clear: both;
+}
+
+#clientesAdd dd{
+    display: block;
+}
+
+#clientesAdd label{
+	float: left;
+	margin: 10px;
+	font-size: 12px;
+	height: 20px;
+}
+
+#clientesAdd input {
+	font-family: sans-serif;
+	height: 20px;
+	margin: 5px;
+	padding-left: 5px;
+	background-color: #d7d7d7;
+}
+
+#clientesAdd select {
+	font-family: sans-serif;
+	height: 20px;
+	margin: 5px;
+	padding-left: 5px;
+	background-color: #d7d7d7;
+}
+
+#cpfCnpjTomador-label label{
+	margin-right: 77px;
+	float: left;
+}
+
+#cpfCnpjTomador {
+	width: 200px;	
+	float: left;
+}
+
+#cnpjTomador-label label{
+	margin-right: 77px;
+	float: left;
+}
+
+#cnpjTomador {
+	width: 200px;	
+	float: left;
+}
+
+#cpfTomador-label label{
+	margin-right: 77px;
+	float: left;
+}
+
+#cpfTomador {
+	width: 200px;	
+	float: left;
+}
+
+#inscricaoMunicipalTomador-label label{
+	margin-right: 15px;
+	float: left;
+}
+
+#inscricaoMunicipalTomador{
+	width: 200px;
+	float: left;
+}
+
+#razaoSocialTomador-label label{
+	margin-right: 57px;
+	float: left;
+}
+
+#razaoSocialTomador{
+	width: 200px;
+	float: left;
+}
+
+#enderecoTomador-label label{
+	margin-right: 75px;
+	float: left;
+}
+#enderecoTomador{
+	width: 200px;
+	float: left;
+}
+
+#numeroEnderecoTomador-label label{
+	margin-right: 86px;
+	float: left;
+}
+#numeroEnderecoTomador{
+	width: 50px;
+	float: left;
+}
+
+#complementoEnderecoTomador-label label{
+	margin-right: 49px;
+	float: left;
+}
+
+#complementoEnderecoTomador{
+	width: 200px;
+	float: left;
+}
+
+#bairroTomador-label label{
+	margin-right: 98px;
+	float: left;
+}
+
+#bairroTomador{
+	width: 200px;
+	float: left;
+}
+
+#ufTomador-label label{
+	margin-right: 119px;
+	float: left;
+}
+
+#ufTomador{
+	width: 50px;
+	float: left;
+}
+
+#cidadeTomador-label label{
+	margin-right: 93px;
+	float: left;
+}
+#cidadeTomador{
+	width: 200px;
+	float: left;
+}
+
+#paisTomador-label label{
+	margin-right: 109px;
+	float: left;
+}
+#paisTomador{
+	width: 200px;
+	float: left;
+}
+
+#cepTomador-label label{
+	margin-right: 108px;
+	float: left;
+}
+#cepTomador{
+	width: 200px;
+	float: left;
+}
+
+#emailTomador-label label{
+	margin-right: 94px;
+	float: left;
+}
+#emailTomador{
+	width: 200px;
+	float: left;
+}
+
+#telefoneTomador-label label{
+	margin-right: 86px;
+	float: left;
+}
+#telefoneTomador{
+	width: 200px;
+	float: left;
+}
+
+#botaoAdicionar-element{
+	float: right;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+#botaoAdicionar{
+	font-weight: bolder; 
+	width: 90px;
+    background-image:  url("../imagens/i_salvar.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: left;    
+    text-align: right;
+    padding-right: 2px;
+}
+
+#botaoVoltar-element{
+	float: left;
+	margin-right: 20px;
+	margin-top: 10px;
+	clear: both;
+}
+#botaoVoltar{
+	font-weight: bolder; 
+	width: 90px;
+    background-image:  url("../imagens/i_voltar.jpg");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: left;    
+    text-align: center;
+    padding-left: 2px;
+}
+
+.errors li {
+	padding-top: 5px;
+	list-style-type:none;	
+	font-size: 10px;
+}
+
+/* Table */
+table.tablesorter {
+	font-size: 12px;
+	background-color: #4D4D4D;
+	width: 100%;
+	border: 1px solid #000;
+}
+table.tablesorter th {
+	text-align: left;
+	padding: 5px;
+	background-color: #6E6E6E;
+}
+table.tablesorter td {
+	color: black;
+	padding: 5px;
+}
+table.tablesorter .even {
+	background-color: #9AFF9A;
+}
+table.tablesorter .odd {
+	background-color: white;
+}
+table.tablesorter .header {
+	background-image: url("../imagens/bg.png");
+	background-repeat: no-repeat;
+	border-left: 1px solid #FFF;
+	border-right: 1px solid #000;
+	border-top: 1px solid #FFF;
+	padding-left: 30px;
+	padding-top: 3px;
+	height: auto;
+}
+table.tablesorter .headerSortUp {
+	background-image: url("../imagens/asc.png");
+	background-repeat: no-repeat;
+}
+table.tablesorter .headerSortDown {
+	background-image: url("../imagens/desc.png");
+	background-repeat: no-repeat;
+}
+
+#popup_container {
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	min-width: 300px; /* Dialog will be no smaller than this */
+	max-width: 600px; /* Dialog will wrap after this width */
+	background: #FFF;
+	border: solid 5px #999;
+	color: #000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#popup_title {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.75em;
+	color: #666;
+	background: #CCC url(images/title.gif) top repeat-x;
+	border: solid 1px #FFF;
+	border-bottom: solid 1px #999;
+	cursor: default;
+	padding: 0em;
+	margin: 0em;
+}
+
+#popup_content {
+	background: 16px 16px no-repeat url(images/info.gif);
+	padding: 1em 1.75em;
+	margin: 0em;
+}
+
+#popup_content.alert {
+	background-image: url(images/info.gif);
+}
+
+#popup_content.confirm {
+	background-image: url(images/important.gif);
+}
+
+#popup_content.prompt {
+	background-image: url(images/help.gif);
+}
+
+#popup_message {
+	padding-left: 48px;
+}
+
+#popup_panel {
+	text-align: center;
+	margin: 1em 0em 0em 1em;
+}
+
+#popup_prompt {
+	margin: .5em 0em;
+}
